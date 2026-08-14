@@ -1,64 +1,133 @@
-.footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 22px 20px;
-  background: #111827;
-  color: #f9fafb;
-  font-size: 0.95rem;
+.heroi {
+  position: relative;
+  color: #ffffff;
+  padding: 310px 0 120px;
+  overflow: hidden;
+  background-image:
+    linear-gradient(
+      160deg,
+      rgba(6, 20, 15, 0.82) 0%,
+      rgba(6, 20, 15, 0.55) 45%,
+      rgba(6, 20, 15, 0.85) 100%
+    ),
+    var(--foto-fundo-heroi);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-.content {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 40px 20px;
+.heroiConteudo {
+  max-width: 620px;
 }
 
-.card {
-  width: min(700px, 50%);
-  background: #424141;
-  border-radius: 20px;
-  padding: 48px 40px;
-  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
-  text-align: center;
+.tituloHeroi {
+  font-size: clamp(2.2rem, 4.5vw, 3.4rem);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  margin: 22px 0 22px;
 }
 
-.header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px 60px;
-  background: #ffffff;
-  border-bottom: 1px solid #e5e7eb;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
-}
-
-.page {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  background: #f5f7fb;
-  color: #111827;
-}
-
-.nav {
-  display: flex;
-  align-items: center;
-  gap: 28px;
-}
-
-.nav a {
-  color: #374151;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-.text {
-  margin: 18px auto 0;
-  max-width: 540px;
-  color: #4b5563;
-  font-size: 1.05rem;
+.textoHeroi {
+  font-size: 1.15rem;
   line-height: 1.7;
+  color: rgba(255, 255, 255, 0.92);
+  max-width: 480px;
+  margin: 0 0 32px;
+}
+
+.botoesHeroi {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 900px) {
+  .heroiConteudo {
+    max-width: none;
+  }
+
+  .textoHeroi {
+    max-width: none;
+  }
+}
+
+.faixaNumeros {
+  background: #ffffff;
+  border-bottom: 1px solid var(--cor-borda);
+}
+
+.gradeNumeros {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+  padding: 40px 0;
+}
+
+.numeroGrande {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: var(--cor-principal);
+}
+
+.numeroLegenda {
+  color: var(--cor-texto-suave);
+  font-size: 0.95rem;
+  margin-top: 4px;
+}
+
+@media (max-width: 700px) {
+  .gradeNumeros {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
+
+/* ============================================================
+   CARTÕES DE RECURSOS
+   ============================================================ */
+.iconeCartao {
+  width: 46px;
+  height: 46px;
+  border-radius: 12px;
+  background: rgba(18, 184, 134, 0.12);
+  color: var(--cor-principal);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  margin-bottom: 16px;
+}
+
+.tituloCartao {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 0 0 8px;
+}
+
+.textoCartao {
+  color: var(--cor-texto-suave);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ============================================================
+   FAIXA DE CHAMADA FINAL (CTA)
+   ============================================================ */
+.faixaFinal {
+  background: var(--cor-botao-escuro);
+  color: #ffffff;
+  text-align: center;
+  padding: 72px 0;
+}
+
+.faixaFinal .titulo-secao {
+  color: #ffffff;
+}
+
+.faixaFinalTexto {
+  color: rgba(255, 255, 255, 0.75);
+  max-width: 520px;
+  margin: 0 auto 32px;
 }

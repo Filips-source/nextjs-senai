@@ -1,0 +1,22 @@
+.cabecalhoPagina {
+  background: var(--cor-fundo-claro);
+  padding: 72px 0;
+  text-align: center;
+}
+
+.grade {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.iconeGrande {
+  font-size: 1.6rem;
+  margin-bottom: 12px;
+}
+
+@media (max-width: 780px) {
+  .grade {
+    grid-template-columns: 1fr;
+  }
+}
