@@ -38,7 +38,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      {/* CHAMADA FINAL */}
+  
       <section className={styles.faixaFinal}>
         <div className="contentor">
           <h2 className="titulo-secao">Pronto para começar?</h2>
