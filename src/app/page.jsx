@@ -18,7 +18,7 @@ export default async function Home() {
 
   await sleep(3500);
 
-  throw new Error("Erro simulado!!!")
+  /* throw new Error("Erro simulado!!!") */
   
   return (
     <main>
