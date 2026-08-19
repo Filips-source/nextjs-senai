@@ -239,3 +239,22 @@ img {
     grid-template-columns: 1fr;
   }
 }
+
+/* not found pagina */
+
+.container{
+  width: 70vw;
+  margin: auto;
+}
+
+.flex{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.face{
+  width: 200px;
+  height: 500px;
+}

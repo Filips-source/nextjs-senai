@@ -1,5 +1,6 @@
 import Link from "next/link";
 import styles from "./page.module.css";
+import { resolve } from "styled-jsx/css";
 
 const tituloPrincipal = "O cara que mais comeu Pudim no mundo todo";
 const textoDeApoio =
@@ -10,8 +11,15 @@ const textoBotaoSecundario = "Ver planos";
 const linkBotaoSecundario = "/planos";
 
 const fotoDeFundoHeroi = "/imagens/foto-fundo-heroi.png";
+  
+const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
-export default function Home() {
+export default async function Home() {
+
+  await sleep(3500);
+
+  throw new Error("Erro simulado!!!")
+  
   return (
     <main>
       <section
