@@ -1,6 +1,9 @@
 import Link from "next/link";
 import styles from "./page.module.css";
 import { resolve } from "styled-jsx/css";
+import BannerCTA from "@/components/bannerCTA";
+import header from "@/components/header"
+import Footer from "@/components/footer"
 
 const tituloPrincipal = "O cara que mais comeu Pudim no mundo todo";
 const textoDeApoio =
@@ -59,6 +62,11 @@ export default async function Home() {
           </Link>
         </div>
       </section>
+
+    <BannerCTA/>
+    <header/>
+    <Footer/>
+
     </main>
   );
 }

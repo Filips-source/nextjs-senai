@@ -1,0 +1,22 @@
+.banner-container-fluid{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+
+    background-color: bisque;
+    color: cornsilk;
+    font-weight: bold;
+
+    padding: 5rem;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+
+.button-cta{
+        padding: 10px;
+        background-color: cornsilk;
+        border-radius: 25px;
+
+    }
+}    

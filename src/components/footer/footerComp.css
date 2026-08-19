@@ -1,0 +1,30 @@
+/* ---------- Rodapé (usado no layout.js, aparece em todas as páginas) ---------- */
+.site-footer {
+  background: var(--cor-botao-escuro);
+  color: #cbd5e1;
+  padding: 40px 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+  font-size: 0.9rem;
+}
+
+.site-footer .marca-rodape {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.site-footer nav {
+  display: flex;
+  gap: 20px;
+}
+
+@media (max-width: 640px) {
+  .site-footer {
+    padding: 28px 20px;
+    flex-direction: column;
+    text-align: center;
+  }
+}
