@@ -1,0 +1,14 @@
+.card-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px;
+    border-radius: 25px;
+    background-color: black;
+    color: white;
+}
+
+.card-wrap img {
+    height: auto;
+    width: 200px;
+}
