@@ -39,19 +39,22 @@ export default function ProdutosPage() {
     return (
         <>
             <Header />
-            <h1>Listagem de produtos</h1>
-            <div className="card-container">
-
-            {listaProdutos.map((produto) => (
-                <CardProduto
-                key={produto.id}
-                titulo={produto.titulo}
-                descricao={produto.descricao}
-                imagem={produto.imagem}
-                preco={produto.preco}
-                />
-            ))}
-            </div>
+            <main className="produtos-page">
+                <div className="produtos-header">
+                    <h1 className="produtos-title">Listagem de produtos</h1>
+                </div>
+                <div className="produtos-grid">
+                    {listaProdutos.map((produto) => (
+                        <CardProduto
+                            key={produto.id}
+                            titulo={produto.titulo}
+                            descricao={produto.descricao}
+                            imagem={produto.imagem}
+                            preco={produto.preco}
+                        />
+                    ))}
+                </div>
+            </main>
             <Footer />
         </>
     );

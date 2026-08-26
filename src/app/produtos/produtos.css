@@ -1,7 +1,35 @@
-.card-container {
+.produtos-page {
+    width: min(1200px, 82vw);
+    margin: 0 auto;
+    padding: 32px 0 60px;
+}
+
+.produtos-header {
     display: flex;
-    flex-wrap: wrap;
-    gap: 40px;
-    width: 75vw;
-    margin: auto;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 28px;
+}
+
+.produtos-title {
+    margin: 0;
+    text-align: center;
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 700;
+}
+
+.produtos-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+    gap: 32px;
+}
+
+@media (max-width: 900px) {
+    .produtos-page {
+        width: min(90vw, 760px);
+    }
+
+    .produtos-grid {
+        grid-template-columns: 1fr;
+    }
 }

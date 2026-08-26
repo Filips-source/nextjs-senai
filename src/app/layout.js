@@ -24,6 +24,8 @@ const linksDoMenu = [
   { texto: "Sobre", endereco: "/sobre" },
   { texto: "Recursos", endereco: "/recursos" },
   { texto: "Planos", endereco: "/planos" },
+  { texto: "Produtos", endereco: "/produtos" },
+  { texto: "Blog", endereco: "/blogNoticias" },
 ];
 
 export default function RootLayout({ children }) {
