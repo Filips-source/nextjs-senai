@@ -1,0 +1,22 @@
+.secao {
+    padding: 72px 0;
+    background: #ffffff;
+}
+
+.status {
+    text-align: center;
+    font-size: 1.1rem;
+    padding: 40px 0;
+    color: var(--cor-texto-suave, #4b5563);
+}
+
+.statusErro {
+    color: #e03131;
+}
+
+.grade {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 24px;
+    margin-top: 32px;
+}

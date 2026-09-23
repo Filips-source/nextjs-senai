@@ -4,6 +4,7 @@ import { resolve } from "styled-jsx/css";
 import BannerCTA from "@/components/bannerCTA";
 import header from "@/components/header"
 import Footer from "@/components/footer"
+import UsersSection from "@/components/usersSection";
 
 const tituloPrincipal = "O cara que mais comeu Pudim no mundo todo";
 const textoDeApoio =
@@ -65,6 +66,9 @@ export default async function Home() {
 
     <BannerCTA/>
     <header/>
+
+    <UsersSection/>
+
     <Footer/>
 
     </main>
