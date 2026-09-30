@@ -1,0 +1,117 @@
+.receita-page {
+    width: min(1100px, 90vw);
+    margin: 0 auto;
+    padding: 32px 0 60px;
+}
+
+.receita-voltar {
+    display: inline-block;
+    margin-bottom: 24px;
+    font-weight: 600;
+    color: var(--cor-principal-escura);
+}
+
+.receita-voltar:hover {
+    text-decoration: underline;
+}
+
+.receita-aviso {
+    color: var(--cor-texto-suave);
+}
+
+/* ---------- topo: imagem + título + informações ---------- */
+.receita-topo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.receita-topo img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: var(--borda-arredondada);
+    background: var(--cor-borda);
+}
+
+.receita-resumo h1 {
+    margin: 0 0 24px;
+    font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+}
+
+.receita-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin: 0;
+}
+
+.receita-info div {
+    background: var(--cor-fundo-cartao);
+    border: 1px solid var(--cor-borda);
+    border-radius: 12px;
+    padding: 14px 16px;
+}
+
+.receita-info dt {
+    font-size: 0.85rem;
+    color: var(--cor-texto-suave);
+    margin-bottom: 4px;
+}
+
+.receita-info dd {
+    margin: 0;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+/* ---------- ingredientes e preparo ---------- */
+.receita-detalhes {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 28px;
+    margin-top: 40px;
+    align-items: start;
+}
+
+.receita-bloco {
+    background: var(--cor-fundo-cartao);
+    border: 1px solid var(--cor-borda);
+    border-radius: var(--borda-arredondada);
+    padding: 28px;
+}
+
+.receita-bloco h2 {
+    margin: 0 0 16px;
+    font-size: 1.4rem;
+    letter-spacing: -0.01em;
+}
+
+.receita-ingredientes,
+.receita-preparo {
+    margin: 0;
+    padding-left: 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    line-height: 1.6;
+}
+
+.receita-ingredientes li::marker {
+    color: var(--cor-principal);
+}
+
+.receita-preparo li::marker {
+    color: var(--cor-principal-escura);
+    font-weight: 700;
+}
+
+@media (max-width: 900px) {
+    .receita-topo,
+    .receita-detalhes {
+        grid-template-columns: 1fr;
+    }
+}

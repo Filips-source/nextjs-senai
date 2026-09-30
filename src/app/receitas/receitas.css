@@ -1,0 +1,32 @@
+.receitas-page {
+    width: min(1180px, 90vw);
+    margin: 0 auto;
+    padding: 48px 0 60px;
+}
+
+.receitas-titulo {
+    margin: 0 0 8px;
+    text-align: center;
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 800;
+    letter-spacing: -0.02em;
+}
+
+.receitas-subtitulo {
+    margin: 0 auto 40px;
+    text-align: center;
+    color: var(--cor-texto-suave);
+    max-width: 520px;
+    line-height: 1.6;
+}
+
+.receitas-aviso {
+    text-align: center;
+    color: var(--cor-texto-suave);
+}
+
+.receitas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 28px;
+}

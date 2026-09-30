@@ -27,6 +27,7 @@ const linksDoMenu = [
   { texto: "Produtos", endereco: "/produtos" },
   { texto: "Blog", endereco: "/blogNoticias" },
   { texto: "Ordem", endereco: "/ordens" },
+  { texto: "Receita", endereco: "/receitas" },
 ];
 
 export default function RootLayout({ children }) {
